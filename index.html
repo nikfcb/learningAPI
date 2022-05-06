@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <img id = "demo" src="#">
+  <button id="myBtn" onclick="nicetry()">Click me</button>
+  <script>
+      
+  let img = document.querySelector('img');
+  let element = document.getElementById("myBtn")
+
+  function nicetry() {
+    fetch('https://api.giphy.com/v1/gifs/translate?api_key=0ZzVbcnU0Ts8aadBiq0469kEYM30c0Bp&s=cats', {mode: 'cors'})
+    .then(function(response) {
+      return response.json();
+    })
+    .then(function(response) {
+
+            img.src = response.data.images.original.url
+            
+            document.getElementById("demo").innerHTML = img.src;
+
+    }) 
+  }  
+  </script>
+</body>
+</html>
