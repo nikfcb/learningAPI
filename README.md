@@ -1,6 +1,6 @@
 # learningAPI
 
-Live preview :- nikfcb.github.io/learningapi/
+Live preview :- https://nikfcb.github.io/learningAPI/
 
 Learning API with html and js. (Note :- no styling added)
 
